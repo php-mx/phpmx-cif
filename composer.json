@@ -1,7 +1,7 @@
 {
     "name": "phpmx/cif",
     "minimum-stability": "dev",
-    "description": "Camada de cifra pra objetos PHP",
+    "description": "Camada de cifra de objetos PHPMX",
     "license": "MIT",
     "authors": [
         {
