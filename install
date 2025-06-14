@@ -1,0 +1,18 @@
+<?php
+
+use PhpMx\Import;
+use PhpMx\Terminal;
+
+return new class extends Terminal {
+
+    function __invoke()
+    {
+        $ignore = Import::content('.gitignore');
+
+        if (strpos($ignore, "#phpmx-cif") === false) {
+            $ignore .= "\n#phpmx-cif";
+            $ignore .= "\n/storage/certificate";
+            $ignore .= "\n";
+        }
+    }
+};

@@ -1,0 +1,9 @@
+/.env
+/vendor
+/composer.lock
+
+#phpmx-core
+/storage/certificate/*
+
+!/storage/certificate/base.crt
+

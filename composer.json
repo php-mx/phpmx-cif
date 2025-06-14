@@ -1,0 +1,24 @@
+{
+    "name": "phpmx/cif",
+    "minimum-stability": "dev",
+    "description": "Camada de cifra pra objetos PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "André Ricardo",
+            "email": "contatoadmx@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "": "source/"
+        },
+        "files": [
+            "helper/script/env.php",
+            "helper/script/path.php"
+        ]
+    },
+    "require": {
+        "phpmx/core": "dev-main"
+    }
+}
