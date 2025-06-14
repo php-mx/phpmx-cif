@@ -1,5 +1,6 @@
 <?php
 
+use PhpMx\File;
 use PhpMx\Import;
 use PhpMx\Terminal;
 
@@ -13,6 +14,7 @@ return new class extends Terminal {
             $ignore .= "\n#phpmx-cif";
             $ignore .= "\n/storage/certificate";
             $ignore .= "\n";
+            File::create('.gitignore', $ignore, true);
         }
     }
 };
